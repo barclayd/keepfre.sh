@@ -7,7 +7,7 @@ import type { Route } from './+types/home';
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'New React Router App' },
+    { title: 'Keep Fresh' },
     { name: 'description', content: 'Welcome to React Router!' },
   ];
 }
