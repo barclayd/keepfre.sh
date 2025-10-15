@@ -30,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <meta property="og:title" content="myFridge" />
+        <meta property="og:title" content="Keep Fresh" />
         <meta
           property="og:description"
           content="Smart food inventory tracker available for iPhone and Web"

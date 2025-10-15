@@ -20,16 +20,12 @@ const Image = ({ src, alt, width, left = '0', zIndex = 0 }: ImageProps) => (
 );
 
 export const Hero = () => (
-  <div className="max-w-[600px] flex relative -top-60 flex-col justify-self-center bg-white h-auto p-5 w-full rounded-[10px] shadow-2xl max-[660px]:max-w-[85%] max-[660px]:-top-48 max-[400px]:-top-44 max-[400px]:max-w-[80%]">
-    <div
-      className="grid grid-cols-2 justify-center items-center max-[660px]:grid-cols-1"
-      style={{
-        gridTemplateAreas: "'text image'",
-      }}
-    >
+  <div className="w-4/5 max-w-[750px] flex flex-col justify-self-center bg-white h-auto p-5 rounded-[10px] shadow-2xl">
+    <div className="grid gap-2 justify-center items-center [grid-template-areas:'image''text'] md:[grid-template-areas:'text_image']">
       <div className="flex flex-col gap-y-4" style={{ gridArea: 'text' }}>
-        <h2 className="font-bold m-0 text-[1.35em]">
-          Say hello to Keep Fresh and wave goodbye to food waste 👋
+        <h2 className="m-0 text-[1.35em] text-green-500">
+          Say hello to <span className="font-serif">Keep Fresh</span> and wave
+          goodbye to food waste 👋
         </h2>
         <h4 className="text-[#929292] text-base font-semibold">
           The smart food inventory tracker to help you use all the food you buy.
@@ -67,7 +63,7 @@ export const Hero = () => (
       </div>
 
       <div
-        className="flex justify-between items-end max-[660px]:justify-evenly max-[660px]:[&>*:nth-child(1)]:left-[9%] max-[660px]:[&>*:nth-child(2)]:-left-[9%] max-[535px]:[&>*:nth-child(1)]:left-[7.5%] max-[535px]:[&>*:nth-child(2)]:-left-[7.5%] max-[400px]:[&>*:nth-child(1)]:left-[4%] max-[400px]:[&>*:nth-child(2)]:-left-[4%]"
+        className="flex justify-between items-end"
         style={{ gridArea: 'image' }}
       >
         <Image
