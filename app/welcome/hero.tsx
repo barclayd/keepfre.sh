@@ -1,50 +1,32 @@
-interface ImageProps {
-  src: string;
-  alt: string;
-  width: string;
-  left?: string;
-  zIndex?: number;
-}
-
-const Image = ({ src, alt, width, left = '0', zIndex = 0 }: ImageProps) => (
-  <img
-    src={src}
-    alt={alt}
-    width={width}
-    className={`relative z-[${zIndex}]`}
-    style={{
-      left,
-      filter: 'drop-shadow(0 1.25rem 0.75rem rgba(0, 0, 0, 0.25))',
-    }}
-  />
-);
-
 export const Hero = () => (
-  <div className="w-4/5 max-w-[750px] flex flex-col justify-self-center bg-white h-auto p-5 rounded-[10px] shadow-2xl">
-    <div className="grid gap-2 justify-center items-center [grid-template-areas:'image''text'] md:[grid-template-areas:'text_image']">
-      <div className="flex flex-col gap-y-4" style={{ gridArea: 'text' }}>
-        <h2 className="m-0 text-[1.35em] text-green-500">
+  <div className="w-[90%] sm:w-4/5 max-w-[900px] flex flex-col justify-self-center bg-white h-auto p-4 sm:p-5 rounded-[10px] shadow-2xl">
+    <div className="grid gap-4 sm:gap-2 justify-center items-center [grid-template-areas:'image''text'] md:[grid-template-areas:'text_image'] md:grid-cols-[1fr_1fr] lg:grid-cols-[1.2fr_1fr]">
+      <div
+        className="flex flex-col gap-y-3 sm:gap-y-4"
+        style={{ gridArea: 'text' }}
+      >
+        <h2 className="m-0 text-xl sm:text-[1.35em] md:text-2xl text-green-500 leading-snug">
           Say hello to <span className="font-serif">Keep Fresh</span> and wave
           goodbye to food waste 👋
         </h2>
-        <h4 className="text-[#929292] text-base font-semibold">
+        <h4 className="text-[#929292] text-sm sm:text-base font-semibold leading-relaxed">
           The smart food inventory tracker to help you use all the food you buy.
         </h4>
-        <h4 className="text-[#929292] text-base font-normal">
+        <h4 className="text-[#929292] text-sm sm:text-base font-normal leading-relaxed">
           Keep Fresh has a database of more than 3 million food items, sends
           smart notifications and has an intuitive UI to make eliminating food
           waste easier than ever.
         </h4>
-        <h4 className="text-[#929292] text-base font-normal">
-          Available now for <span className="font-bold italic">free</span> on
-          the App Store!
+        <h4 className="text-[#929292] text-sm sm:text-base font-normal leading-relaxed">
+          Available now for{' '}
+          <span className="font-bold italic text-yellow-500">free</span> on the
+          App Store!
         </h4>
-        <div className="flex justify-start items-end cursor-pointer">
+        <div className="flex justify-start items-end cursor-pointer mt-1">
           <a href="https://apple.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="144"
-              height="42.3"
+              className="w-32 sm:w-36 h-auto"
               viewBox="0 0 180 53"
             >
               <title>App Store</title>
@@ -67,18 +49,15 @@ export const Hero = () => (
         className="flex justify-between items-end"
         style={{ gridArea: 'image' }}
       >
-        <Image
-          src="https://user-images.githubusercontent.com/39765499/92454631-9d169200-f1b8-11ea-9878-058d790895fa.png"
-          alt="iphone-8-fridge"
-          width="135px"
-          left="5%"
-          zIndex={2}
+        <img
+          src="https://images.keepfre.sh/app/images/AddItem.png"
+          alt="Add Item View"
+          className="relative drop-shadow-2xl w-[135px] sm:w-[145px] md:w-[135px] lg:w-[155px] h-auto left-[5%] sm:left-[9%] md:left-[5%] z-20"
         />
-        <Image
-          src="https://user-images.githubusercontent.com/39765499/92454634-9ee05580-f1b8-11ea-9003-d2062d46297c.png"
-          alt="iphone-x-dashboard"
-          width="165px"
-          left="-5%"
+        <img
+          src="https://images.keepfre.sh/app/images/TodayView.png"
+          alt="Today View"
+          className="relative drop-shadow-2xl w-[165px] sm:w-[175px] md:w-[165px] lg:w-[185px] h-auto -left-[5%] sm:-left-[9%] md:-left-[5%] z-10"
         />
       </div>
     </div>
