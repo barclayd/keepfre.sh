@@ -3,7 +3,7 @@ import type { Route } from './+types/privacy';
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'New React Router App' },
+    { title: 'Privacy - Keep Fresh' },
     { name: 'description', content: 'Welcome to React Router!' },
   ];
 }
