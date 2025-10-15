@@ -1,4 +1,5 @@
 import { Background } from '~/welcome/background.tsx';
+import { Footer } from '~/welcome/footer.tsx';
 import { Hero } from '~/welcome/hero.tsx';
 import { Navbar } from '~/welcome/navbar.tsx';
 import type { Route } from './+types/home';
@@ -13,12 +14,13 @@ export function meta({}: Route.MetaArgs) {
 
 export function ServerComponent() {
   return (
-    <main className="w-full">
+    <main className="w-full min-h-screen flex flex-col">
       <Navbar />
       <Background />
-      <div className="flex justify-center items-center h-[200px] md:py-4 md:[300px]">
+      <div className="flex-grow flex justify-center items-center -mt-[50vh] z-1 py-8">
         <Hero />
       </div>
+      <Footer />
     </main>
   );
 }
