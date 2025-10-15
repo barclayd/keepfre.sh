@@ -1,7 +1,7 @@
-import { Background } from '~/welcome/background.tsx';
-import { Footer } from '~/welcome/footer.tsx';
-import { Hero } from '~/welcome/hero.tsx';
-import { Navbar } from '~/welcome/navbar.tsx';
+import { Background } from '~/components/background.tsx';
+import { Footer } from '~/components/footer.tsx';
+import { Hero } from '~/components/hero.tsx';
+import { Navbar } from '~/components/navbar.tsx';
 import type { Route } from './+types/home';
 
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export function ServerComponent() {
+export default function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col">
       <Navbar />

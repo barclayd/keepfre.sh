@@ -4,9 +4,12 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
+    "cf-typegen": "wrangler types",
+    "deploy": "bun run build && wrangler deploy",
     "dev": "react-router dev",
-    "start": "react-router-serve build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
+    "postinstall": "bun run cf-typegen",
+    "preview": "bun run build && vite preview",
+    "typecheck": "bun run cf-typegen && react-router typegen && tsc -b",
     "lint": "bunx biome check .",
     "lint:fix": "bunx biome check --write ."
   },
@@ -19,6 +22,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.6",
+    "@cloudflare/vite-plugin": "^1.13.13",
     "@react-router/dev": "7.9.2",
     "@react-router/fs-routes": "7.9.2",
     "@tailwindcss/vite": "4.1.13",
@@ -30,6 +34,7 @@
     "typescript": "5.9.2",
     "vite": "7.1.6",
     "vite-plugin-devtools-json": "1.0.0",
-    "vite-tsconfig-paths": "5.1.4"
+    "vite-tsconfig-paths": "5.1.4",
+    "wrangler": "^4.43.0"
   }
 }
