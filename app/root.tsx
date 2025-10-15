@@ -18,7 +18,11 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+    href: 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap',
+  },
+  {
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Shrikhand&display=swap',
   },
 ];
 
@@ -35,7 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           property="og:description"
           content="Smart food inventory tracker available for iPhone and Web"
         />
-        <meta name="apple-itunes-app" content="app-id=1526361370" />
+        <meta name="apple-itunes-app" content="app-id=6753958860" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://keepfre.sh" />
         <link
@@ -46,6 +50,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           property="og:image"
           content="https://images.keepfre.sh/app/icons/AppIcon-iOS-Default-1024x1024%401x.png"
         />
+        <title>Keep Fresh</title>
       </head>
       <body>
         {children}
