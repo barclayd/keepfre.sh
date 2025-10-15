@@ -1,6 +1,9 @@
 export function Footer() {
   return (
-    <footer style={{ backgroundColor: 'rgb(51, 51, 51)' }} className="w-full py-8">
+    <footer
+      style={{ backgroundColor: 'rgb(51, 51, 51)' }}
+      className="w-full py-8"
+    >
       <div className="container mx-auto px-4">
         <div className="flex justify-center gap-8 text-white/80 text-sm">
           <a href="/privacy" className="hover:text-white transition-colors">

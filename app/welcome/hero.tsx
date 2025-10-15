@@ -36,7 +36,8 @@ export const Hero = () => (
           waste easier than ever.
         </h4>
         <h4 className="text-[#929292] text-base font-normal">
-          Available now for free on the App Store!
+          Available now for <span className="font-bold italic">free</span> on
+          the App Store!
         </h4>
         <div className="flex justify-start items-end cursor-pointer">
           <a href="https://apple.com">
