@@ -39,6 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           property="og:description"
           content="Smart food inventory tracker available for iPhone and Web"
         />
+        <meta name="theme-color" content="#c4e0e6" />
         <meta name="apple-itunes-app" content="app-id=6753958860" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://keepfre.sh" />
