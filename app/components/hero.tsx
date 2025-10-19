@@ -50,12 +50,14 @@ export const Hero = () => (
         style={{ gridArea: 'image' }}
       >
         <img
-          src="https://images.keepfre.sh/app/images/AddItem.png"
+          src="https://images.keepfre.sh/app/images/AddItem.webp"
+          fetchPriority="high"
           alt="Add Item View"
           className="relative drop-shadow-2xl w-[135px] sm:w-[145px] md:w-[135px] lg:w-[155px] h-auto left-[5%] sm:left-[9%] md:left-[5%] z-20"
         />
         <img
-          src="https://images.keepfre.sh/app/images/TodayView.png"
+          src="https://images.keepfre.sh/app/images/TodayView.webp"
+          fetchPriority="high"
           alt="Today View"
           className="relative drop-shadow-2xl w-[165px] sm:w-[175px] md:w-[165px] lg:w-[185px] h-auto -left-[5%] sm:-left-[9%] md:-left-[5%] z-10"
         />
