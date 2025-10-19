@@ -45,11 +45,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta property="og:url" content="https://keepfre.sh" />
         <link
           rel="apple-touch-icon"
-          href="https://images.keepfre.sh/app/icons/AppIcon-iOS-Default-1024x1024%401x.png"
+          href="https://images.keepfre.sh/app/icons/app-icon-background.webp"
         />
         <meta
           property="og:image"
-          content="https://images.keepfre.sh/app/icons/AppIcon-iOS-Default-1024x1024%401x.png"
+          content="https://images.keepfre.sh/app/icons/app-icon-background.webp"
         />
         <title>Keep Fresh</title>
       </head>
