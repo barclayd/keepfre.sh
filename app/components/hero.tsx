@@ -23,7 +23,7 @@ export const Hero = () => (
           App Store!
         </h4>
         <div className="flex justify-start items-end cursor-pointer mt-1">
-          <a href="https://apple.com">
+          <a href="https://apps.apple.com/app/keepfresh/id6753958860">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-32 sm:w-36 h-auto"
