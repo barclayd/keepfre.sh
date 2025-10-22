@@ -12,7 +12,10 @@ export function Footer() {
           <a href="/terms" className="hover:text-white transition-colors">
             Terms of Use
           </a>
-          <a href="/contact" className="hover:text-white transition-colors">
+          <a
+            href="mailto:hello@keepfre.sh"
+            className="hover:text-white transition-colors"
+          >
             Contact
           </a>
         </div>
