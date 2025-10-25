@@ -7,8 +7,8 @@ import type { Route } from './+types/home';
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Keep Fresh' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { title: 'KeepFresh' },
+    { name: 'description', content: "The world's best food waste tracker - end food waste for good" },
   ];
 }
 

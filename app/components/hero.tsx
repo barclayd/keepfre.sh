@@ -6,14 +6,14 @@ export const Hero = () => (
         style={{ gridArea: 'text' }}
       >
         <h2 className="m-0 text-xl sm:text-[1.35em] md:text-2xl text-green-500 leading-snug">
-          Say hello to <span className="font-serif">Keep Fresh</span> and wave
+          Say hello to <span className="font-serif">KeepFresh</span> and wave
           goodbye to food waste 👋
         </h2>
         <h4 className="text-[#929292] text-sm sm:text-base font-semibold leading-relaxed">
           The smart food inventory tracker to help you use all the food you buy.
         </h4>
         <h4 className="text-[#929292] text-sm sm:text-base font-normal leading-relaxed">
-          Keep Fresh has a database of more than 3 million food items, sends
+          KeepFresh has a database of more than 3 million food items, sends
           smart notifications and has an intuitive UI to make eliminating food
           waste easier than ever.
         </h4>
