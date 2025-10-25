@@ -34,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <meta property="og:title" content="Keep Fresh" />
+        <meta property="og:title" content="KeepFresh" />
         <meta
           property="og:description"
           content="Smart food inventory tracker available for iPhone and Web"
@@ -51,7 +51,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           property="og:image"
           content="https://images.keepfre.sh/app/icons/app-icon-background.webp"
         />
-        <title>Keep Fresh</title>
+        <title>KeepFresh</title>
       </head>
       <body>
         {children}

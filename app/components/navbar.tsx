@@ -7,7 +7,7 @@ export const Navbar = () => (
           alt="keepfresh-icon"
           width="50px"
         />
-        <div className="text-3xl font-serif text-green-500">Keep Fresh</div>
+        <div className="text-3xl font-serif text-green-500">KeepFresh</div>
       </div>
     </div>
   </nav>

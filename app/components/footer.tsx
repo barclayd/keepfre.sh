@@ -24,7 +24,7 @@ export function Footer() {
           className="h-[1px] my-6 mx-auto max-w-2xl"
         />
         <div className="text-center text-white/60 text-sm">
-          © 2025, Keep Fresh
+          © 2025, KeepFresh
         </div>
       </div>
     </footer>

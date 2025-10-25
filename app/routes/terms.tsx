@@ -3,8 +3,8 @@ import type { Route } from './+types/terms';
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'T&Cs - Keep Fresh' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { title: 'T&Cs - KeepFresh' },
+    { name: 'description', content: 'KeepFresh Terms & Conditions of Service' },
   ];
 }
 
@@ -21,7 +21,7 @@ export default function Terms() {
         <div className="space-y-6 text-gray-700 leading-relaxed">
           <p>
             Please read these terms carefully. By downloading, accessing or
-            using the Keep Fresh application you agree on our terms of use. If
+            using the KeepFresh application you agree on our terms of use. If
             you do not agree to these term of use, please do not use the
             service.
           </p>
