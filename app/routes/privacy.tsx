@@ -3,8 +3,8 @@ import type { Route } from './+types/privacy';
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Privacy - Keep Fresh' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { title: 'Privacy - KeepFresh' },
+    { name: 'description', content: 'KeepFresh Privacy Policy' },
   ];
 }
 
@@ -22,7 +22,7 @@ export default function Privacy() {
 
         <div className="space-y-6 text-gray-700 leading-relaxed">
           <p>
-            Keep Fresh ("us", "we", or "our") operates the https://keepfre.sh
+            KeepFresh ("us", "we", or "our") operates the https://keepfre.sh
             website (the "Service").
           </p>
 
@@ -101,7 +101,7 @@ export default function Privacy() {
             Use of Data
           </h2>
 
-          <p>Keep Fresh uses the collected data for various purposes:</p>
+          <p>KeepFresh uses the collected data for various purposes:</p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
             Transfer of Data
@@ -126,7 +126,7 @@ export default function Privacy() {
           </p>
 
           <p>
-            Keep Fresh will take all steps reasonably necessary to ensure that
+            KeepFresh will take all steps reasonably necessary to ensure that
             your data is treated securely and in accordance with this Privacy
             Policy and no transfer of your Personal Data will take place to an
             organization or a country unless there are adequate controls in
@@ -139,7 +139,7 @@ export default function Privacy() {
           </h2>
 
           <p>
-            Keep Fresh may disclose your Personal Data in the good faith belief
+            KeepFresh may disclose your Personal Data in the good faith belief
             that such action is necessary to:
           </p>
 
