@@ -8,7 +8,10 @@ import type { Route } from './+types/home';
 export function meta({}: Route.MetaArgs) {
   return [
     { title: 'KeepFresh' },
-    { name: 'description', content: "The world's best food waste tracker - end food waste for good" },
+    {
+      name: 'description',
+      content: "The world's best food waste tracker - end food waste for good",
+    },
   ];
 }
 
