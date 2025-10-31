@@ -7,3 +7,4 @@
 .wrangler/
 /build/
 /dist/
+/tsconfig.tsbuildinfo
