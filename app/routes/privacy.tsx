@@ -3,7 +3,7 @@ import type { Route } from './+types/privacy';
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Privacy - KeepFresh' },
+    { title: 'KeepFresh - Food Waste Tracker | Privacy Policy' },
     { name: 'description', content: 'KeepFresh Privacy Policy' },
   ];
 }

@@ -3,7 +3,7 @@ import type { Route } from './+types/terms';
 // biome-ignore lint/correctness/noEmptyPattern: react-router default
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'T&Cs - KeepFresh' },
+    { title: 'KeepFresh - Food Waste Tracker | Terms & Conditions' },
     { name: 'description', content: 'KeepFresh Terms & Conditions of Service' },
   ];
 }

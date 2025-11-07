@@ -34,27 +34,22 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <title>
-          KeepFresh - Food Inventory Tracking App | Reduce Food Waste
-        </title>
+        <title>KeepFresh - Food Waste Tracker | Food Waste Tracking App</title>
         <meta
           name="description"
-          content="KeepFresh - Smart food inventory tracking app. Reduce food waste & save money. Available for free on the App Store."
-        />
-        <meta
-          name="keywords"
-          content="food inventory tracking app, food waste reduction, pantry organizer, expiration date tracker, shopping list app, smart refrigerator app, food management, KeepFresh"
+          content="KeepFresh is a free food waste tracker app that helps you reduce food waste, track expiration dates, and save money. Smart food waste tracking for your pantry, fridge & freezer. Available on iOS and web."
         />
         <link rel="canonical" href="https://keepfre.sh" />
         <meta
           property="og:title"
-          content="KeepFresh - Smart Food Inventory Tracker"
+          content="KeepFresh - Food Waste Tracker | Reduce Waste & Save Money"
         />
         <meta
           property="og:description"
-          content="Smart food inventory tracker available for free on iOS and Web"
+          content="KeepFresh is a free food waste tracker app that helps you reduce food waste, track expiration dates, and save money. Smart food waste tracking for your pantry, fridge & freezer. Available on iOS and web."
         />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="KeepFresh" />
         <meta property="og:url" content="https://keepfre.sh" />
         <meta
           property="og:image"
@@ -63,6 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/webp" />
+        <meta name="application-name" content="KeepFresh" />
         <meta
           property="og:image:alt"
           content="KeepFresh - Smart Food Inventory Tracking App"
@@ -72,11 +68,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="KeepFresh - Smart Food Inventory Tracker"
+          content="KeepFresh - Food Waste Tracker | Reduce Waste & Save Money"
         />
         <meta
           name="twitter:description"
-          content="Never waste food again. Track expiration dates, organize your pantry, and reduce food waste with KeepFresh."
+          content="KeepFresh is a free food waste tracker app that helps you reduce food waste, track expiration dates, and save money. Smart food waste tracking for your pantry, fridge & freezer. Available on iOS and web."
         />
         <meta
           name="twitter:image"
@@ -125,19 +121,33 @@ export function Layout({ children }: { children: React.ReactNode }) {
               '@type': 'Organization',
               name: 'KeepFresh',
             },
+            logo: 'https://images.keepfre.sh/app/icons/app-icon-background.webp',
+            sameAs: ['https://twitter.com/KeepFre_sh'],
           })}
         </script>
 
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'KeepFresh',
-            url: 'https://keepfre.sh',
-            logo: 'https://images.keepfre.sh/app/icons/app-icon-background.webp',
-            sameAs: ['https://twitter.com/KeepFre_sh'],
-            description:
-              'Smart food inventory tracking app - reduces food waste, save money',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is a food waste tracker?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A food waste tracker is an app that helps you monitor food items, track expiration dates, and reduce food waste by keeping your pantry organized.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How does food waste tracking work?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Food waste tracking apps like KeepFresh let you scan barcodes, set expiration reminders, and organise your food inventory to minimize waste.',
+                },
+              },
+            ],
           })}
         </script>
       </head>
