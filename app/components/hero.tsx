@@ -9,8 +9,7 @@ export const Hero = () => (
           Track Food Waste & Save Money
         </h1>
         <h4 className="text-[#929292] text-sm sm:text-base font-semibold leading-snug">
-          Say hello to{' '}
-          <span className="font-serif text-green-500 text-xl">KeepFresh</span>{' '}
+          Say hello to <span className="text-green-500 text-xl">KeepFresh</span>{' '}
           and wave goodbye to food waste 👋
         </h4>
         <h4 className="text-[#929292] text-sm sm:text-base font-normal leading-relaxed">
